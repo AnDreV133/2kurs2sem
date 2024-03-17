@@ -1,5 +1,8 @@
 #include "../Function.h"
 
+#ifndef Parabola_h
+#define Parabola_h
+
 class Parabola : public Function
 {
 private:
@@ -15,3 +18,5 @@ protected:
     double b;
     double c;
 };
+
+#endif

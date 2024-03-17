@@ -74,7 +74,71 @@ def find_potentials(cost_matrix, allocation):
 
         non_zero_indices = non_zero_indices[1:]
 
+    for index in range(m):
+        if u[index] == float("-inf"):
+            u[index] = 0
+
+    for index in range(n):
+        if v[index] == float("-inf"):
+            v[index] = 0
+
     return u, v
+
+
+# def calculate_potentials(costs, allocation):
+#     m, n = allocation.shape
+#     u = np.full(m, float("-inf"))
+#     v = np.full(n, float("-inf"))
+#
+#     u[0] = 0
+#     max_iterations = m * n  # Максимальное число итераций
+#
+#     def calculate_potentials_horizontally(i):
+#         nonlocal max_iterations, costs, allocation
+#         max_iterations -= 1
+#
+#         if max_iterations == 0:
+#             raise Exception("Зацикливание при вычислении потенциалов")
+#         #
+#         # if u[i] is None:
+#         #     raise Exception(f"Ошибка получения потенциала u[{i}]")
+#
+#         for j in range(n):
+#             if allocation[i][j] == 0:
+#                 continue
+#             if v[j] != float("-inf"):
+#                 continue
+#             else:
+#                 v[j] = costs[i][j] - u[i]
+#                 calculate_potentials_vertically(j)
+#
+#     def calculate_potentials_vertically(j):
+#         # if v[j] is None:
+#         #     raise Exception(f"Ошибка получения потенциала v[{j}]")
+#
+#         nonlocal costs, allocation
+#         for i in range(m):
+#             if allocation[i][j] == 0:
+#                 continue
+#             if u[i] != float("-inf"):
+#                 continue
+#             else:
+#                 u[i] = costs[i][j] - v[j]
+#                 calculate_potentials_horizontally(i)
+#
+#     calculate_potentials_horizontally(0)  # Начало рекурсии
+#
+#     # for i in range(m):
+#     #     if u[i] is None:
+#     #         print(f"Не удалось вычислить потенциал u[{i}]")
+#     #         return None
+#     #
+#     # for j in range(n):
+#     #     if v[j] is None:
+#     #         print(f"Не удалось вычислить потенциал v[{j}]")
+#     #         return None
+#
+#     return u, v
 
 
 def correct_solve_by_cycle(costs_grid, allocation):
@@ -102,7 +166,8 @@ def correct_solve_by_cycle(costs_grid, allocation):
                 break_flag = True
                 break
 
-        if break_flag: break
+        if break_flag:
+            break
 
     min_subtraction_value = min(allocation[i_begin, j_end], allocation[i_end, j_begin])
 
@@ -114,28 +179,16 @@ def correct_solve_by_cycle(costs_grid, allocation):
     return allocation
 
 
-# m = 3  # число строк
-# n = 3  # число столбцов
-# allocation = [[10, 0, 0], [0, 15, 5], [0, 0, 10]]  # исходные allocation
-
-
-def find_loop_and_redistribute(costs_grid, allocation, i0, j0):
+def find_loop_and_redistribute(costs_grid, allocation):
     allocation = allocation.copy()
     m, n = allocation.shape
 
-    max_iterations = m * n  # максимальное число итераций
-    # iЦикл = []
-    # jЦикл = []
+    max_iterations = m * n
     cycle_cord = []
     i_begin = 0
     j_begin = 0
-    for i in range(m):
-        if np.min(costs_grid[i]) < costs_grid[i_begin][j_begin]:
-            j_begin = np.argmin(costs_grid[i])
-            i_begin = i
 
-    i_curr = i_begin
-    j_curr = j_begin
+    neg_val_indices = np.argwhere(costs_grid < 0)
 
     def find_loop_horizontally(i0, j0):
         nonlocal max_iterations
@@ -154,6 +207,7 @@ def find_loop_and_redistribute(costs_grid, allocation, i0, j0):
         return False
 
     def find_loop_vertically(i0, j0):
+        # nonlocal i_begin, j_begin
         for i in range(m):
             if i == i_begin and j0 == j_begin:
                 cycle_cord.append((i, j0))
@@ -167,8 +221,12 @@ def find_loop_and_redistribute(costs_grid, allocation, i0, j0):
                 return True
         return False
 
-    if find_loop_horizontally(i_begin, j_begin):
-        return cycle_cord
+    for index in neg_val_indices:
+        i_begin = index[0]
+        j_begin = index[1]
+        if find_loop_horizontally(i_begin, j_begin):
+            return cycle_cord
+
     return None
 
 
@@ -210,21 +268,6 @@ def redistribution_by_cycle(cycle_cord, allocation):
     return True
 
 
-# Пример использования функций
-# iЦикл = []
-# jЦикл = []
-# i0, j0 = 0, 0  # начальные координаты для поиска цикла
-# found_loop = find_loop_and_redistribute(i0, j0)
-# if found_loop:
-#     result = redistribution_by_cycle()
-#     if result:
-#         print("Обновленные отгрузки:")
-#         for row in Отгрузки:
-#             print(row)
-# else:
-#     print("Цикл не найден.")
-
-
 def main():
     # Пример использования функции
     u = np.array([18, 12, 22, 19])
@@ -241,6 +284,7 @@ def main():
 
     while True:
         u_potentials, v_potentials = find_potentials(costs, allocation)
+        # u_potentials, v_potentials = calculate_potentials(costs, allocation)
         print("Потенциалы для отправителей:", u_potentials)
         print("Потенциалы для получателей:", v_potentials)
 
@@ -253,15 +297,21 @@ def main():
                 break
 
             # allocation = correct_solve_by_cycle(costs_grid, allocation)
-            print("Пересчитанное распределение по циклу")
             # print(allocation)
 
-            cycle_cord = find_loop_and_redistribute(costs_grid, allocation, 0, 0)
+            cycle_cord = find_loop_and_redistribute(costs_grid, allocation)
             redistribution_by_cycle(cycle_cord, allocation)
+            print("Пересчитанное распределение по циклу:")
             print(allocation)
         else:
             break
 
+    print("Итоговая стоимость транспортировки:")
+    print(np.sum(allocation * costs))
+
 
 if __name__ == '__main__':
     main()
+
+
+

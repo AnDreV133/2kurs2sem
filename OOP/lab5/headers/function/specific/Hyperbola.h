@@ -1,5 +1,8 @@
 #include "../Function.h"
 
+#ifndef Hyperbola_h
+#define Hyperbola_h
+
 class Hyperbola : public Function
 {
 private:
@@ -12,3 +15,5 @@ public:
     double calc(double x) override;
     std::string toString() override;
 };
+
+#endif

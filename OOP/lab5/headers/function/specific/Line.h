@@ -1,5 +1,8 @@
 #include "../Function.h"
 
+#ifndef Line_h
+#define Line_h
+
 class Line : public Function
 {
 private:
@@ -15,3 +18,5 @@ protected:
     double a;
     double b;
 };
+
+#endif

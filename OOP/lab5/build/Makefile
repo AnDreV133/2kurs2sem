@@ -595,6 +595,54 @@ sources/function/FunctionManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/FunctionManager.cpp.s
 .PHONY : sources/function/FunctionManager.cpp.s
 
+sources/function/IOHandler.obj: sources/function/IOHandler.cpp.obj
+.PHONY : sources/function/IOHandler.obj
+
+# target to build an object file
+sources/function/IOHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj
+.PHONY : sources/function/IOHandler.cpp.obj
+
+sources/function/IOHandler.i: sources/function/IOHandler.cpp.i
+.PHONY : sources/function/IOHandler.i
+
+# target to preprocess a source file
+sources/function/IOHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/IOHandler.cpp.i
+.PHONY : sources/function/IOHandler.cpp.i
+
+sources/function/IOHandler.s: sources/function/IOHandler.cpp.s
+.PHONY : sources/function/IOHandler.s
+
+# target to generate assembly for a file
+sources/function/IOHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/IOHandler.cpp.s
+.PHONY : sources/function/IOHandler.cpp.s
+
+sources/function/Solver.obj: sources/function/Solver.cpp.obj
+.PHONY : sources/function/Solver.obj
+
+# target to build an object file
+sources/function/Solver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/Solver.cpp.obj
+.PHONY : sources/function/Solver.cpp.obj
+
+sources/function/Solver.i: sources/function/Solver.cpp.i
+.PHONY : sources/function/Solver.i
+
+# target to preprocess a source file
+sources/function/Solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/Solver.cpp.i
+.PHONY : sources/function/Solver.cpp.i
+
+sources/function/Solver.s: sources/function/Solver.cpp.s
+.PHONY : sources/function/Solver.s
+
+# target to generate assembly for a file
+sources/function/Solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/sources/function/Solver.cpp.s
+.PHONY : sources/function/Solver.cpp.s
+
 sources/function/specific/Hyperbola.obj: sources/function/specific/Hyperbola.cpp.obj
 .PHONY : sources/function/specific/Hyperbola.obj
 
@@ -716,6 +764,12 @@ help:
 	@echo "... sources/function/FunctionManager.obj"
 	@echo "... sources/function/FunctionManager.i"
 	@echo "... sources/function/FunctionManager.s"
+	@echo "... sources/function/IOHandler.obj"
+	@echo "... sources/function/IOHandler.i"
+	@echo "... sources/function/IOHandler.s"
+	@echo "... sources/function/Solver.obj"
+	@echo "... sources/function/Solver.i"
+	@echo "... sources/function/Solver.s"
 	@echo "... sources/function/specific/Hyperbola.obj"
 	@echo "... sources/function/specific/Hyperbola.i"
 	@echo "... sources/function/specific/Hyperbola.s"

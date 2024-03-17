@@ -1,5 +1,8 @@
 #include "Function.h"
 
+#ifndef FunctionManager_h
+#define FunctionManager_h
+
 class FunctionManager
 {
 private:
@@ -12,6 +15,8 @@ public:
 
     Function *getFunctionById(int id);
     std::vector<Function *> getFunctions();
-    std::string getInfoAllFunctionsByX(double x);
     void addFunction(Function *function);
+    size_t size();
 };
+
+#endif

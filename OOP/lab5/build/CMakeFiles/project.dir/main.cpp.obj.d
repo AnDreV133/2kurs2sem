@@ -135,10 +135,7 @@ CMakeFiles/project.dir/main.cpp.obj: T:/2kurs2sem/OOP/lab5/main.cpp \
  C:/Users/dmitr/gcc/include/c++/13.2.0/bits/stl_vector.h \
  C:/Users/dmitr/gcc/include/c++/13.2.0/bits/stl_bvector.h \
  C:/Users/dmitr/gcc/include/c++/13.2.0/bits/vector.tcc \
- T:/2kurs2sem/OOP/lab5/headers/function/specific/Line.h \
- T:/2kurs2sem/OOP/lab5/headers/function/Function.h \
- T:/2kurs2sem/OOP/lab5/headers/function/specific/Parabola.h \
- T:/2kurs2sem/OOP/lab5/headers/function/specific/Hyperbola.h \
- T:/2kurs2sem/OOP/lab5/headers/function/Function.h \
+ T:/2kurs2sem/OOP/lab5/headers/function/IOHandler.h \
  T:/2kurs2sem/OOP/lab5/headers/function/FunctionManager.h \
- T:/2kurs2sem/OOP/lab5/headers/function/Function.h
+ T:/2kurs2sem/OOP/lab5/headers/function/Function.h \
+ T:/2kurs2sem/OOP/lab5/headers/function/Solver.h

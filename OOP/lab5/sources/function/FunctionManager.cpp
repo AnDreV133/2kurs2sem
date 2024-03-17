@@ -29,12 +29,7 @@ Function *FunctionManager::getFunctionById(int id)
     return functions[id];
 }
 
-std::string FunctionManager::getInfoAllFunctionsByX(double x)
+size_t FunctionManager::size()
 {
-    std::string res;
-    for (Function *function : functions)
-        res += "f(" + std::to_string(x) + ") = " + function->toString() + " = " + std::to_string(function->calc(x)) + "\n";
-    res += "\b";
-
-    return res;
+    return functions.size();
 }

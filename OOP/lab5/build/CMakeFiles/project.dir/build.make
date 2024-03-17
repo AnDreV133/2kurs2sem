@@ -97,10 +97,38 @@ CMakeFiles/project.dir/sources/function/FunctionManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/sources/function/FunctionManager.cpp.s"
 	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S T:/2kurs2sem/OOP/lab5/sources/function/FunctionManager.cpp -o CMakeFiles/project.dir/sources/function/FunctionManager.cpp.s
 
+CMakeFiles/project.dir/sources/function/Solver.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/sources/function/Solver.cpp.obj: T:/2kurs2sem/OOP/lab5/sources/function/Solver.cpp
+CMakeFiles/project.dir/sources/function/Solver.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/sources/function/Solver.cpp.obj"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/sources/function/Solver.cpp.obj -MF CMakeFiles/project.dir/sources/function/Solver.cpp.obj.d -o CMakeFiles/project.dir/sources/function/Solver.cpp.obj -c T:/2kurs2sem/OOP/lab5/sources/function/Solver.cpp
+
+CMakeFiles/project.dir/sources/function/Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/sources/function/Solver.cpp.i"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E T:/2kurs2sem/OOP/lab5/sources/function/Solver.cpp > CMakeFiles/project.dir/sources/function/Solver.cpp.i
+
+CMakeFiles/project.dir/sources/function/Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/sources/function/Solver.cpp.s"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S T:/2kurs2sem/OOP/lab5/sources/function/Solver.cpp -o CMakeFiles/project.dir/sources/function/Solver.cpp.s
+
+CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj: T:/2kurs2sem/OOP/lab5/sources/function/IOHandler.cpp
+CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj -MF CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj.d -o CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj -c T:/2kurs2sem/OOP/lab5/sources/function/IOHandler.cpp
+
+CMakeFiles/project.dir/sources/function/IOHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/sources/function/IOHandler.cpp.i"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E T:/2kurs2sem/OOP/lab5/sources/function/IOHandler.cpp > CMakeFiles/project.dir/sources/function/IOHandler.cpp.i
+
+CMakeFiles/project.dir/sources/function/IOHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/sources/function/IOHandler.cpp.s"
+	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S T:/2kurs2sem/OOP/lab5/sources/function/IOHandler.cpp -o CMakeFiles/project.dir/sources/function/IOHandler.cpp.s
+
 CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj: T:/2kurs2sem/OOP/lab5/sources/function/specific/Hyperbola.cpp
 CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj"
 	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj -MF CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj.d -o CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj -c T:/2kurs2sem/OOP/lab5/sources/function/specific/Hyperbola.cpp
 
 CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.s: cmake_force
 CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj: T:/2kurs2sem/OOP/lab5/sources/function/specific/Line.cpp
 CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj"
 	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj -MF CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj.d -o CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj -c T:/2kurs2sem/OOP/lab5/sources/function/specific/Line.cpp
 
 CMakeFiles/project.dir/sources/function/specific/Line.cpp.i: cmake_force
@@ -128,7 +156,7 @@ CMakeFiles/project.dir/sources/function/specific/Line.cpp.s: cmake_force
 CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj: T:/2kurs2sem/OOP/lab5/sources/function/specific/Parabola.cpp
 CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj"
 	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj -MF CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj.d -o CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj -c T:/2kurs2sem/OOP/lab5/sources/function/specific/Parabola.cpp
 
 CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.s: cmake_force
 CMakeFiles/project.dir/main.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/main.cpp.obj: T:/2kurs2sem/OOP/lab5/main.cpp
 CMakeFiles/project.dir/main.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
 	C:/Users/dmitr/gcc/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/main.cpp.obj -MF CMakeFiles/project.dir/main.cpp.obj.d -o CMakeFiles/project.dir/main.cpp.obj -c T:/2kurs2sem/OOP/lab5/main.cpp
 
 CMakeFiles/project.dir/main.cpp.i: cmake_force
@@ -157,6 +185,8 @@ CMakeFiles/project.dir/main.cpp.s: cmake_force
 project_OBJECTS = \
 "CMakeFiles/project.dir/sources/function/Function.cpp.obj" \
 "CMakeFiles/project.dir/sources/function/FunctionManager.cpp.obj" \
+"CMakeFiles/project.dir/sources/function/Solver.cpp.obj" \
+"CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj" \
 "CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj" \
 "CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj" \
 "CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj" \
@@ -167,6 +197,8 @@ project_EXTERNAL_OBJECTS =
 
 project.exe: CMakeFiles/project.dir/sources/function/Function.cpp.obj
 project.exe: CMakeFiles/project.dir/sources/function/FunctionManager.cpp.obj
+project.exe: CMakeFiles/project.dir/sources/function/Solver.cpp.obj
+project.exe: CMakeFiles/project.dir/sources/function/IOHandler.cpp.obj
 project.exe: CMakeFiles/project.dir/sources/function/specific/Hyperbola.cpp.obj
 project.exe: CMakeFiles/project.dir/sources/function/specific/Line.cpp.obj
 project.exe: CMakeFiles/project.dir/sources/function/specific/Parabola.cpp.obj
@@ -174,7 +206,7 @@ project.exe: CMakeFiles/project.dir/main.cpp.obj
 project.exe: CMakeFiles/project.dir/build.make
 project.exe: CMakeFiles/project.dir/linkLibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=T:/2kurs2sem/OOP/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable project.exe"
 	"C:/Program Files (x86)/CMake/bin/cmake.exe" -E rm -f CMakeFiles/project.dir/objects.a
 	C:/Users/dmitr/gcc/bin/ar.exe qc CMakeFiles/project.dir/objects.a @CMakeFiles/project.dir/objects1.rsp
 	C:/Users/dmitr/gcc/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/project.dir/objects.a -Wl,--no-whole-archive -o project.exe -Wl,--out-implib,libproject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/project.dir/linkLibs.rsp
