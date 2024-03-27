@@ -36,22 +36,6 @@ def equationOY(x, y):
            + k2 * (c2 - n2) * (n2 - y) / c2 \
            - k3 * (c3 - n3) * (n3 + y) / c3
 
-#
-# def equationOXDerivativeX(x, y):
-#     return (equationOX(x + dif, y) - equationOX(x - dif, y)) / (2 * dif)
-#
-#
-# def equationOXDerivativeY(x, y):
-#     return (equationOX(x, y + dif) - equationOX(x, y - dif)) / (2 * dif)
-#
-#
-# def equationOYDerivativeX(x, y):
-#     return (equationOY(x + dif, y) - equationOY(x - dif, y)) / (2 * dif)
-#
-#
-# def equationOYDerivativeY(x, y):
-#     return (equationOY(x, y + dif) - equationOY(x, y - dif)) / (2 * dif)
-
 
 def solve(s, t):  # s1 = x; s3 = y
     dv1dt = equationOX(s[1], s[3]) / m
@@ -63,7 +47,7 @@ def solve(s, t):  # s1 = x; s3 = y
 
 
 def main():
-    t = np.linspace(0, 5, 1000)
+    t = np.linspace(0, 1, 1000)
     s0 = [0, 0, 0, 0]
     s = odeint(solve, s0, t)
     print(t)
@@ -72,7 +56,7 @@ def main():
     v2 = s[:, 2]
     Y = s[:, 3]
 
-    plt.xlim(0, 5)
+    plt.xlim(0, 1)
     # plt.plot(t, v1, 'r--', label="v1(t)")
     plt.plot(t, X, 'b-', label="X(t)")
     # plt.plot(t, v2, 'y--', label="v2(t)")
